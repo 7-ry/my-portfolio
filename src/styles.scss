@@ -12,8 +12,10 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
     margin: 0;
     padding: 0;
 }
@@ -24,11 +26,17 @@ h3 {
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
 a {
+    color: var(--color-primary);
     text-decoration: none;
-    color: inherit;
+    transition: color 0.3s ease;
+
+    &:hover {
+        filter: brightness(90%);
+    }
 }
 
 .footer {
@@ -46,13 +54,18 @@ html {
 
 /* 全セクション共通のパディング */
 section {
-    padding: 4rem 2rem; // 上下64px、左右32pxのイメージ
+    padding: 5rem 2rem;
 }
 
 /* モバイル用調整 */
 @media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
     section {
-        padding: 2rem 1.5rem; // 上下32px、左右24px
+        padding: 3rem 1.5rem;
     }
 
     .project-card {

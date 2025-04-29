@@ -14,16 +14,16 @@
     }
 
     .project-card {
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: var(--color-bg-main);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
         overflow: hidden;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: pointer;
 
         &:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
         }
 
         img {
@@ -38,18 +38,18 @@
 
         p {
             padding: 0 1rem 1rem;
-            color: #555;
+            color: var(--color-text-sub);
         }
 
         a {
             display: inline-block;
             margin-bottom: 1rem;
             font-weight: bold;
-            color: #007bff;
+            color: var(--color-primary);
             transition: color 0.3s ease;
 
             &:hover {
-                color: #0056b3;
+                filter: brightness(90%);
             }
         }
     }
