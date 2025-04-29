@@ -1,56 +1,76 @@
 .projects {
     text-align: center;
     padding: 4rem 2rem;
+    background-color: var(--color-bg-soft);
+    color: var(--color-text-main);
 
     h2 {
         font-size: 2.5rem;
         margin-bottom: 3rem;
     }
 
-    .projects-grid {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
     .project-card {
-        background: var(--color-bg-main);
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
 
         &:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
         }
 
         img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
         }
 
         h3 {
-            margin: 1rem 0 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
         }
 
         p {
-            padding: 0 1rem 1rem;
-            color: var(--color-text-sub);
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
         }
 
-        a {
-            display: inline-block;
-            margin-bottom: 1rem;
-            font-weight: bold;
-            color: var(--color-primary);
+        .view-link {
+            font-weight: 500;
+            color: #007bff;
+            text-decoration: none;
             transition: color 0.3s ease;
 
             &:hover {
-                filter: brightness(90%);
+                color: #0056b3;
+                text-decoration: underline;
             }
         }
+
+        img {
+            width: 100%;
+            height: 200px; // 必要に応じて調整（例: 200px）
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
     }
 }

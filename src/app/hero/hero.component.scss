@@ -5,10 +5,31 @@
     align-items: center;
     text-align: center;
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+
+    background-image: url('/assets/bc-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.55); // オーバーレイでテキストの視認性を確保
+        z-index: 0;
+        backdrop-filter: blur(2px);
+    }
 
     .hero-content {
+        position: relative;
+        z-index: 1;
         max-width: 700px;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     }
 
     .hero-img {
@@ -24,16 +45,17 @@
     h1 {
         font-size: 2.8rem;
         margin-bottom: 1rem;
+        color: #fff;
     }
 
     .subtitle {
         font-size: 1.4rem;
-        color: var(--color-text-sub);
+        color: rgba(255, 255, 255, 0.85);
         margin-bottom: 1.5rem;
     }
 
     .description {
         font-size: 1.1rem;
-        color: var(--color-text-sub);
+        color: rgba(255, 255, 255, 0.75);
     }
 }

@@ -13,20 +13,20 @@ export class ProjectsComponent {
     {
       title: 'Counter App',
       description: 'A simple app to increment and reset a counter.',
-      image: 'assets/counter.jpg',
-      link: 'https://github.com/your-github-counter'
+      image: 'assets/counter-app.png',
+      link: 'https://github.com/7-ry/counter-app'
     },
     {
       title: 'Todo App',
       description: 'A basic todo list application to manage tasks.',
-      image: 'assets/todo.jpg',
-      link: 'https://github.com/your-github-todo'
+      image: 'assets/todo.png',
+      link: 'https://github.com/7-ry/todo-app'
     },
     {
       title: 'Order Tracker',
       description: 'Track and manage simple product orders efficiently.',
-      image: 'assets/order.jpg',
-      link: 'https://github.com/your-github-order'
+      image: 'assets/order-tracker.png',
+      link: 'https://github.com/7-ry/order-tracker'
     }
   ];
 }
