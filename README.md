@@ -14,8 +14,8 @@ This is my personal portfolio website built with Angular, SCSS, and Bootstrap.
 - Bootstrap 5
 - Animate On Scroll (AOS)
 
-## Live Demo
-[Coming Soon after Deployment]
+### 🔗 Live Demo
+[https://rad-starlight-80c9bf.netlify.app](https://rad-starlight-80c9bf.netlify.app)
 
 ## Setup
 ```bash
