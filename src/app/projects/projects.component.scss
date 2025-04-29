@@ -18,10 +18,12 @@
         border-radius: 10px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        transition: transform 0.3s;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
 
         &:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         img {
@@ -44,7 +46,7 @@
             margin-bottom: 1rem;
             font-weight: bold;
             color: #007bff;
-            transition: color 0.3s;
+            transition: color 0.3s ease;
 
             &:hover {
                 color: #0056b3;

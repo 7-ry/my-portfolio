@@ -1,7 +1,8 @@
 .about {
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #f9f9f9;
+    background-color: var(--color-bg-soft);
+    color: var(--color-text-main);
 
     h2 {
         font-size: 2.5rem;
@@ -38,6 +39,14 @@
                     padding: 0.5rem 1rem;
                     border-radius: 20px;
                     font-weight: bold;
+                }
+
+                .about-content {
+
+                    .intro p,
+                    .skills li {
+                        color: var(--color-text-sub);
+                    }
                 }
             }
         }

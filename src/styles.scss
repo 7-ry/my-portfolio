@@ -1,5 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 // styles.scss（全体共通）
+
+:root {
+    --color-text-main: #333;
+    --color-text-sub: #444;
+    --color-primary: #0d6efd;
+    --color-bg-main: #ffffff;
+    --color-bg-soft: #f3f4f6;
+    --color-border: #ddd;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
@@ -12,6 +22,8 @@ h1,
 h2,
 h3 {
     font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 a {
@@ -30,4 +42,37 @@ a {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* 全セクション共通のパディング */
+section {
+    padding: 4rem 2rem; // 上下64px、左右32pxのイメージ
+}
+
+/* モバイル用調整 */
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1.5rem; // 上下32px、左右24px
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+
+    .contact-links a {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
 }

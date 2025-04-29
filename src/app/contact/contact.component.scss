@@ -1,7 +1,12 @@
 .contact {
-    background-color: #f9f9f9;
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
     padding: 6rem 2rem;
     text-align: center;
+
+    .subtext {
+        color: var(--color-text-sub);
+    }
 
     h2 {
         font-size: 2.5rem;
@@ -18,16 +23,17 @@
         a {
             display: inline-block;
             padding: 0.75rem 2rem;
-            border: 2px solid #007bff;
             border-radius: 30px;
-            color: #007bff;
             font-size: 1.2rem;
             font-weight: 600;
             text-decoration: none;
             transition: all 0.3s ease;
+            background-color: transparent;
+            color: var(--color-primary);
+            border: 1px solid var(--color-primary);
 
             &:hover {
-                background-color: #007bff;
+                background-color: var(--color-primary);
                 color: white;
                 transform: translateY(-3px);
             }
