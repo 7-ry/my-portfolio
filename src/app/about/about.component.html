@@ -1,1 +1,20 @@
-<p>about works!</p>
+<section class="about" id="about" data-aos="fade-up" data-aos-duration="1200">
+    <h2>About Me</h2>
+
+    <div class="about-content">
+        <div class="intro">
+            <p *ngFor="let paragraph of introParagraphs">
+                {{ paragraph }}
+            </p>
+        </div>
+
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li *ngFor="let skill of skills">
+                    {{ skill }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
