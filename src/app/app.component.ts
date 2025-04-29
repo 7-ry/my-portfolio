@@ -23,8 +23,8 @@ export class AppComponent implements AfterViewInit {  // ★ここも変更
 
   ngAfterViewInit() {  // ★ここで初期化
     AOS.init({
-      duration: 800,
-      once: true,
+      duration: 400,
+      once: false,
     });
 
     setTimeout(() => {
