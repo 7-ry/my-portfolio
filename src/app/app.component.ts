@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -18,9 +18,17 @@ import * as AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  ngOnInit() {
-    AOS.init();
-  }
+export class AppComponent implements AfterViewInit {  // ★ここも変更
   title = 'my-portfolio';
+
+  ngAfterViewInit() {  // ★ここで初期化
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);  // 少し遅らせてリフレッシュ
+  }
 }
