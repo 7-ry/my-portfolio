@@ -22,7 +22,7 @@ export class ContactComponent {
     },
     {
       title: 'Email',
-      link: 'ryushin0714@gmail.com',
+      link: 'mailto:ryushin0714@gmail.com',
       class: 'fas fa-envelope',
     }
   ]
