@@ -27,6 +27,12 @@ export class ProjectsComponent {
       description: 'Track and manage simple product orders efficiently.',
       image: 'assets/order-tracker.png',
       link: 'https://github.com/7-ry/order-tracker'
+    },
+    {
+      title: 'Attack on Titan QUIZ',
+      description: 'Attack on Titan QUIZ built with JS.',
+      image: 'assets/AOTQuiz.png',
+      link: 'https://github.com/7-ry/AOTquiz'
     }
   ];
 }
