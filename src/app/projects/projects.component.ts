@@ -33,6 +33,12 @@ export class ProjectsComponent {
       description: 'Attack on Titan QUIZ built with JS.',
       image: 'assets/AOTQuiz.png',
       link: 'https://github.com/7-ry/AOTquiz'
+    },
+    {
+      title: 'E-Commerce Demo Site',
+      description: 'Shopping website built with Angular, Node.js, and MongoDB. Includes authentication and dynamic product listings.',
+      image: 'assets/EcommerceApp.png',
+      link: 'https://new-app-test-cb8f204d9370.herokuapp.com/products'
     }
   ];
 }
